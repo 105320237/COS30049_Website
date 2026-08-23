@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Prompt Injection</title>
+</head>
+<body>
+    <div class="title" id="title">
+        <h1> AI Prompt Injection Detector</h1>
+    </div>
+    <div class ="nav-menu" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="data.html">Our Data</a>
+    </div>
+    <div class="injection-test">
+        <h2>Injection Test</h2>
+        <textarea id="userInput" rows="10" cols="50" placeholder="Test your injection here."></textarea>
+        <button id="testButton">Test Injection</button>
+    </div>
+
+    <div class="results-detected" id="results-detected">
+        <h3>Our system has detected: </h3>
+        <progress id="detectionProgress" value="40" max="100">40%</progress>
+        <p id="detectionResult"> is a prompt injection attempt.</p>
+    </div>
+
+    
+</body>
+</html>

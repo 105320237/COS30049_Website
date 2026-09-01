@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Data</title>
 </head>
 <body>
     <header>
@@ -14,11 +17,36 @@
         <div class ="nav-menu" id="nav-menu">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="data.html">Our Data</a>
+            <a href="data.html" class="active">Our Data</a>
         </div>
     </header>
     <div class="data-header" id="data-header">
+        <p class="eyebrow">Dataset &amp; methodology</p>
         <h2>Our Project Data</h2>
+        <p class="subtitle">Our classifier is trained on a HuggingFace prompt injection dataset, extended with de-obfuscated and clustered attack variants so the model generalises beyond a single phrasing of an attack.</p>
+ 
+        <div class="stat-grid" id="stat-grid">
+            <div class="stat-card">
+                <span class="stat-value">2</span>
+                <p class="stat-label">Classes: safe vs. injection</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">4+</span>
+                <p class="stat-label">Attack sub-types identified by clustering</p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">&lt;1.5s</span>
+                <p class="stat-label">Target inference response time</p>
+            </div>
+        </div>
+        <p class="stat-note">Figures shown are prototype targets from our WBS and will be replaced with measured results once training is complete.</p>
+ 
+        <div class="tag-row" id="tag-row">
+            <span class="tag">Role-play framing</span>
+            <span class="tag">Direct override</span>
+            <span class="tag">Encoding / obfuscation</span>
+            <span class="tag">Leetspeak</span>
+        </div>
     </div>
 </body>
 </html>
